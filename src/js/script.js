@@ -80,19 +80,6 @@ $().ready(function() {
 			    	amount: { currency: 'USD', value : prod_price.replace('$', '') }, // US$55.00
 			  	},
 
-			  	shippingOptions: [
-				    {
-				      id: 'standard',
-				      label: 'Standard shipping',
-				      amount: {currency: 'USD', value: '10.00'},
-				      selected: true
-				    },
-				    {
-				      id: 'express',
-				      label: 'Express shipping',
-				      amount: {currency: 'USD', value: '25.00'}
-				    }
-				]
 			};
 
 			var options = {
