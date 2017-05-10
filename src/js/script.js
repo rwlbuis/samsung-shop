@@ -91,6 +91,8 @@ $().ready(function() {
   				options               // optional parameter for things like shipping, etc.
 			);
 
+                        setTimeout(function(){ payment.abort(); }, 20000);
+
 			// Make PaymentRequest show to display payment sheet 
 			payment.show().then(function(paymentResponse) {
 				
