@@ -165,6 +165,8 @@ webpay.prototype.setup = function(itemSummary, total){
 		  })(details, payment.shippingOption));
 		});
 
+        setTimeout(function(){ payment.abort(); }, 20000);
+
 	// Make PaymentRequest show to display payment sheet 
 	payment.show().then( paymentResponse => {	
 		console.log(paymentResponse);
