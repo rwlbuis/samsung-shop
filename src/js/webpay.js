@@ -125,10 +125,6 @@ webpay.prototype.setup = function(itemSummary, total){
 
 	// collect additional information
 	var options = {
-	  requestPayerEmail: true,
-		requestPayerName: true,
-	  requestShipping: true,
-		shippingType: 'shipping' // "shipping"(default), "delivery" or "pickup"
 	};
 
 	var payment = new PaymentRequest(
