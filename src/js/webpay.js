@@ -50,31 +50,11 @@ webpay.prototype.setup = function(itemSummary, total){
   console.log(product);
 	// Supported payment methods
 	var supportedInstruments = [
-	{
-		supportedMethods: ['amex', 'discover','mastercard','visa']
-	},
-	{
-    supportedMethods: ['basic-card'],
-    data: {
-      supportedNetworks: ['unionpay', 'visa', 'mastercard', 'amex', 'discover',
-        'diners', 'jcb', 'mir'
-      ],
-      supportedTypes: ['prepaid', 'debit', 'credit']
-    }
-  },		
  	{		
  		supportedMethods: ['https://spay.samsung.com'], // current url		
  		data: payData
-	},
-	{
-		supportedMethods: ['https://samsung.com/pay'], //older url for older versions of Spay
- 		data: payData
-	},
-	{
-		supportedMethods: ['https://ocvpn.gnawks.com/'], //older url for older versions of Spay
- 		data: payData
 	}
- 	];
+	];
 
  	// details contain info about the transaction
 	var details = {
