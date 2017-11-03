@@ -1,0 +1,176 @@
+<style>
+</style>
+<script>
+
+function freememory() {
+ window.gc(); 
+}
+var runcount = {'fakestring':0, 'eventhandler1':0, 'eventhandler2':0, 'eventhandler3':0, 'eventhandler4':0, 'eventhandler5':0}
+function GetVariable(fuzzervars, var_type) { if(fuzzervars[var_type]) { return fuzzervars[var_type]; } else { return null; }}
+
+function SetVariable(fuzzervars, var_name, var_type) { fuzzervars[var_type] = var_name; }
+var fakestring = {toString: function() {
+return "1" }}
+
+
+function eventhandler1() {
+runcount["eventhandler1"]++; if(runcount["eventhandler1"] > 2) { return; }
+ /*console.log(e.message);*/ 
+ svgvar00002.scrollTo(0.640454373809,0.428065360406); 
+ htmlvar00001.textContent = String.fromCharCode(); 
+ /*console.log(e.message);*/ 
+ /*console.log(e.message);*/ 
+ /* newvar{var00086:Selection} */ var var00086 = document.getSelection(); 
+ var00086.collapseToEnd(); 
+}
+function eventhandler2() {
+runcount["eventhandler2"]++; if(runcount["eventhandler2"] > 2) { return; }
+var fuzzervars = {};
+
+fuzzervars, window;
+ { /*console.log(e.message);*/ }
+try { /* newvar{var00023:eventhandler} */ var var00023 = eventhandler4; } catch(e) { /*console.log(e.message);*/ }
+try { /* newvar{var00044:HTMLFrameSetElement} */ var var00044 = document.createElement("frameset"); } catch(e) { /*console.log(e.message);*/ }
+ /*console.log(e.message);*/ 
+ /*console.log();*/ 
+ /* newvar{var00050:HTMLFormElement} */ var var00050 = htmlvar00016.form; 
+ /* newvar{var00072:HTMLAnchorElement} */ var var00072 = document.createElement("a"); 
+ if (!var00072) {; } else { SetVariable(fuzzervars, var00072, 'HTMLAnchorElement'); SetVariable(fuzzervars, var00072, 'HTMLHyperlinkElementUtils'); SetVariable(fuzzervars, var00072, 'Element'); SetVariable( var00072, 'GlobalEventHandlers'); SetVariable(fuzzervars, 'EventTarget');  } 
+ /*console.log(e.message);*/ 
+ /*console.log(e.message);*/ 
+try {"bordercolor", "red"; } catch(e) { /*console.log(e.message);*/ }
+try { /* newvar{var00074:EventHandler} */ var var00074 = svgvar00011.onbeforepaste; } catch(e) { /*console.log(e.message);*/ }
+try { var00010.setProperty("user-zoom", "zoom"); } catch(e) { /*console.log(e.message);*/ }
+try { htmlvar00037.setAttribute("aria-invalid", "true"); } catch(e) { /*console.log(e.message);*/ }
+try { var00057.height = 0; } catch(e) { /*console.log(e.message);*/ }
+try { /* newvar{var00075:Element} */ var var00075 = var00037.elementFromPoint(1,0); } catch(e) { /*console.log(e.message);*/ }
+ if (!var00075) { var00075 = GetVariable(fuzzervars, 'Element'); } else { SetVariable(); SetVariable(fuzzervars, var00075, 'GlobalEventHandlers'); SetVariable(fuzzervars, var00075, 'EventTarget');  } 
+ /*console.log();*/ 
+ /*console.log(e.message);*/ 
+try { /* newvar{var00078:TrackEvent} */ var var00078 = document.createEvent(); } catch(e) { /*console.log(e.message);*/ }
+ document.all[62%document.all.length].appendChild(var00075); 
+try { var00073.setProperty("table-layout", "fixed"); } catch(e) { /*console.log();*/ }
+
+ document.all[5%document.all.length].appendChild(htmlvar00008); 
+try {"required", "required"; } catch(e) { /*console.log(e.message);*/ }
+ /* newvar{var00108:IdleRequestCallback} */ var var00108 = var00023; 
+ SetVariable(fuzzervars, 'IdleRequestCallback');   
+try { /* newvar{var00109:IdleRequestOptions} */ var var00109 = {timeout: 60}; } catch(e) { /*console.log(e.message);*/ }
+try { /* newvar{var00107:long} */ var var00107 = window.requestIdleCallback(var00108,var00109); } catch(e) { /*console.log(e.message);*/ }
+ /* newvar{var00110:EventListener} */ var var00110 = var00023; 
+ htmlvar00011.addEventListener("DOMNodeRemovedFromDocument", var00110); 
+ /* newvar{var00128:HTMLVideoElement} */ var var00128 = document.createElement("video"); 
+ if (!var00128) { var00128 = GetVariable(fuzzervars, 'HTMLVideoElement'); } else { SetVariable(fuzzervars, var00128, 'HTMLVideoElement'); SetVariable( var00128, 'HTMLMediaElement'); SetVariable(fuzzervars, var00128, 'Element'); SetVariable(fuzzervars, var00128, 'GlobalEventHandlers'); SetVariable(fuzzervars, var00128, 'EventTarget');  } 
+try { /* newvar{var00154:Element} */ var var00154 = var00115.cloneNode(); } catch(e) { /*console.log(e.message);*/ }
+ if (!var00154) { var00154 = GetVariable(fuzzervars, 'Element'); } else { SetVariable(fuzzervars, var00154, 'Element'); SetVariable(fuzzervars, 'GlobalEventHandlers'); SetVariable(fuzzervars, var00154, 'EventTarget');  } 
+try { document.all[67%document.all.length].appendChild(htmlvar00018); } catch(e) { /*console.log(e.message);*/ }
+ document.all[56%document.all.length].appendChild(var00044); 
+try { htmlvar00003.prepend(var00154); } catch(e) { /*console.log(e.message);*/ }
+}
+function eventhandler4() {
+/* newvar{htmlvar00052:HTMLMeterElement} */ var htmlvar00052 = document.createElement("meter"); //HTMLMeterElement
+try { /* newvar{var00002:Range} */ var var00002 = document.caretRangeFromPoint(320,4); } catch(e) { /*console.log(e.message);*/ }
+ htmlvar00010.prepend(htmlvar00052); 
+ /* newvar{var00030:HTMLTextAreaElement} */ var var00030 = document.createElement("textarea"); 
+ /* newvar{var00042:Element} */ var var00042 = htmlvar00037.lastChild; 
+ /* newvar{var00080:Window} */ var var00080 = window.window; 
+try { /* newvar{var00094:boolean} */ var var00094 = document.execCommand("selectAll", false); } catch(e) { /*console.log(e.message);*/ }
+ /* newvar{var00095:Selection} */ var var00095 = document.getSelection(); 
+ /* newvar{var00111:HTMLSelectElement} */ var var00111 = document.createElement("select"); 
+ /* newvar{var00110:HTMLOptionsCollection} */ var var00110 = var00111.options; 
+try { var00110.add(htmlvar00013); } catch(e) { /*console.log(e.message);*/ }
+ htmlvar00039.after(htmlvar00027); 
+try { document.all[54%document.all.length].appendChild(var00030); } catch(e) { /*console.log(e.message);*/ }
+try { document.all[48%document.all.length].appendChild(htmlvar00041); } catch(e) { /*console.log();*/ }
+try { htmlvar00038.remove(); } catch(e) { /*console.log(e.message);*/ }
+try { /* newvar{var00249:eventhandler} */ var var00249 = eventhandler1; } catch(e) { /*console.log();*/ }
+try { /* newvar{var00248:FrameRequestCallback} */ var var00248 = var00249; } catch(e) { /*console.log(e.message);*/ }
+ /* newvar{var00247:long} */ var var00247 = var00080.requestAnimationFrame(var00248); 
+ document.all[79%document.all.length].appendChild(htmlvar00020); 
+ document.all[91%document.all.length].appendChild(var00042); 
+try { var00095.extend(var00042); } catch(e) { /*console.log(e.message);*/ }
+ document.all[54%document.all.length].appendChild(htmlvar00011); 
+}
+function eventhandler5() {
+var fuzzervars = {};
+/* newvar{htmlvar00049:HTMLTrackElement} */ var htmlvar00049 = document.createElement("track"); //HTMLTrackElement
+/* newvar{htmlvar00051:HTMLUnknownElement} */ var htmlvar00051 = document.createElement("dt"); //HTMLUnknownElement
+try { /* newvar{var00022:eventhandler} */ var var00022 = eventhandler2; } catch(e) { /*console.log(e.message);*/ }
+ /* newvar{var00021:FrameRequestCallback} */ var var00021 = var00022; 
+ /* newvar{var00020:long} */ var var00020 = window.webkitRequestAnimationFrame(var00021); 
+ freememory(); 
+ /* newvar{var00045:HTMLMenuItemElement} */ var var00045 = document.createElement("menuitem"); 
+try { window.scrollTo(); } catch(e) { /*console.log(e.message);*/ }
+try { /* newvar{var00126:Document} */ var var00126 = window.document; } catch(e) { /*console.log(e.message);*/ }
+ document.all[78%document.all.length].appendChild(htmlvar00049); 
+ var00126.title = "1"; 
+ /* newvar{var00150:HTMLTableElement} */ var var00150 = document.createElement("table"); 
+try { document.all[3%document.all.length].appendChild(var00045); } catch(e) { /*console.log();*/ }
+ /* newvar{var00221:HTMLTableSectionElement} */ var var00221 = var00150.createTBody(); 
+ var00221 = GetVariable(fuzzervars, 'HTMLTableSectionElement');  
+ document.all[18%document.all.length].appendChild(var00150); 
+try { document.all[40%document.all.length].appendChild(htmlvar00051); } catch(e) { /*console.log(e.message);*/ }
+}
+</script>
+<center id="htmlvar00001" lang="br" lang="eu" form="htmlvar00007" clear="ALL"></center>
+<iframe id="htmlvar00002" frameborder="0" onload="eventhandler5()" style="-webkit-text-security: square; -webkit-border-start: 5px solid green; bottom: 25vw; -webkit-transform-origin: right; -webkit-mask-box-image-width: -1px" data="gUDH{" description="#oak;$'\?8DHK'9v88E" noresize="noresize" high="0"></iframe>
+<shadow id="htmlvar00003" bgproperties="fixed" behavior="slide" style="alignx: left; -webkit-box-ordinal-group: 2; table-layout: auto; align-content: safe; -ms-flex-align: center" accumulate="none" itemtype="">
+<div onmouseout="eventhandler1()" onwebkitanimationstart="eventhandler3()" onerror="eventhandler3()" data="D/KEV" hidden="hidden" loopstart="-1" wrap="hard" autoload="autoload">=Xk1&gt;</div>
+<menu id="htmlvar00005"lt]BDq6&quot;" tabindex="1" style="-webkit-transform: translatex(1); -webkit-justify-content: space-between; white: fuchsia; grid-auto-columns: min-content" compact="compact" hidden="hidden" high="10" results="8" nowrap="nowrap""></menu>
+<shadow id="htmlvar00006" scrolldelay="1" onstorage="eventhandler4()" srclang="to" menu="htmlvar00005" scrolling="yes"><basefont id="htmlvar00007" size="536870912" name="#;w" case="second" encoding="TEXT/HTML" background="}[!Tte" slope="0.5"></basefont>
+<button id="htmlvar00008" onmouseover="eventhandler4()" formmethod="get" onclick="eventhandler4()" form="htmlvar00001"0, 0, 10">
+<dfn id="htmlvar00009" dir="auto" title="7zg])d3bVFGc" tabindex="-1" dir="ltr" formtarget="htmlvar00002" preload="metadata">
+<iframe id="htmlvar00010" noresize="noresize" onerror="eventhandler5()" longdesc="%1oSEE&amp;o]7 %=/T" hidden="hidden" codetype="image/gif">&quot;</iframe>
+<span id="htmlvar00011" form="htmlvar00004" lang="en-HanS" onmouseover="eventhandler2()" onbeforescriptexecute="eventhandler2()">
+<form box-sizing: auto; shape-outside: padding-box ellipse(49% 50%); overflow-y: -webkit-paged-x; visiblity: visible" name="$aG" enctype="multipart/form-data" multiple="multiple" clear="none" vlink="green" dirname="cPEPdj">
+<option id="htmlvar00013" selected="selected"o,.s[lcY" hidden="hidden" name="5?-Y]&quot;[MWFXvF4} " label="C&quot;0=UJJZ\p" vlink="rgb(35,246,176)" enctype="application/x-www-form-urlencoded">
+<command onerror="eventhandler3()" name="bOd4W" case="first"</command>
+<option id="htmlvar00016" onerror="eventhandler1()" nonce="nonce"</option>
+</form>
+</button>
+<form id="htmlvar00017" target="htmlvar00009" onsubmit="eventhandler3()" name=":@(*(on/'m:qv$&gt;F" tabindex="-1" truespeed="false" ping="{ZX(y32C+dGMrNl}hh0" menu="htmlvar00008" formenctype="text/plain" direction="rtl">
+<style id="htmlvar00018" scoped="scoped" title="@G" dir="auto" scoped="scoped" onerror="eventhandler1()" rowspan="-1" ref="author" slot="slot1">x$98*3J\+,[</style>
+<keygen id="htmlvar00019"Eq/XP@OlH&lt;Nz" keytype="RSA" onerror="eventhandler1()" challange="u.a/GSg[B{O/|A" challange="" noshade="noshade" margin="1073741824px 10px" case="capture" code="Sea~IRA1U" azimuth="1">
+</form>
+<s id="htmlvar00020" dir="rtl" lang="ja" class="class2" title="L&lt;" tabindex="32" description="3|GRgNBK!*m@]v%{" contextmenu="htmlvar00009" longdesc="E~=t0h&gt;" vspace="-1" alt="}/#8bP|9^h[.Yb&amp;">si.</s>
+<details class="class8" style="max-height: fit-content; visiblity: visible; -webkit-perspective: -1px; animation: anim 3s; animation-name: anim" ontoggle="eventhandler4()" ontoggle="eventhandler4()" datetime="2000-02-01T03:04:05Z" inner="1" profile="@R{$G4">
+<summary id="htmlvar00022" widows: 3" class="class1" results="1">
+<shadow id="htmlvar00023" vlink="red" size="2" list="htmlvar00001" mayscript="false" color="rgb(27,209,220)">
+<shadow id="htmlvar00024" color="red" indeterminate="true" async="true" focused="false" basefrequency="0.504027052978">
+<p id="htmlvar00025" margin="-1px 0px" charset="UTF-16" margin="6px 11px" onerror="eventhandler2()" hidden="hidden">
+<embed id="htmlvar00026" tabindex="3" width="-1" src="data:audio/mp3;base64,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" valign="center" valign="bottom"xh%b~`" height="1" list="htmlvar00007" selected="selected">
+<dir id="htmlvar00027" compact="compact" compact="compact" placeholder="g p79" defer="defer" framemargin="1" default="Y" scope="colgroup">
+</dir>
+<basefont id="htmlvar00030" size="65535" size="0" step="4" mode="showing" media="screen and (max-width:0px)" sandbox="allow-scripts allow-same-origin" start="1"</basefont>
+<acronym id="htmlvar00031" tabindex="-1"a</acronym>
+</p>
+<progress id="htmlvar00032" class="class6" value="rbC&amp;d[hm" min="-1" hidden="hidden" min="-1" rules="cols" version="-//W3C//DTD HTML 4.01 Transitional//EN" radiogroup="group">
+<svg id="svgvar00001" font-size="inherit" version="1" y="35" viewbox="5 97 49 0" onclick="eventhandler3()" patternContentUnits="userSpaceOnUse" stroke="url(#svgvar00004)" role="button" in2="specOut" letter-spacing="1mm">
+<rect id="svgvar00002" x="6,1" y="0.460899102591" width="1in" height="87%" pointer-events="painted" systemLanguage="sl" font-size="1" onmousedown="eventhandler4()" class="class7" keyTimes="-1;0" targetX="-1" k3="-1" fill-opacity="2147483648" cap-height="1" />
+<foreignObject id="svgvar00003" transform="translate(-1,640.922281971375)" x="0px" y="2in" x="0,1,67" display="inherit" lengthAdjust="spacing" xml:space="default" to="0.321651685438" pointsAtZ="-1" targetX="6"><body xmlns="http://www.w3.org/1999/xhtml">
+<dl id="htmlvar00033" class="class5" style="-webkit-background-clip: content-box; offset-path: path(&quot;M -1 9 L 20 32 Z&quot;); text-combine-upright: unset; text-combine-upright: none; -webkit-column-rule-style: ridge" title="lI#h0}" title="F5&quot;TEf3O#k \qp" cite="AdnUD" hreflang="lt-US">Ov/~#u%jY</dl>
+<map id="htmlvar00034" tabindex="1" name="&lt;`]fmfyL{;R0" name="lGKZkgT" name="'0" poster="fxo&amp;z" novalidate="novalidate" pattern="H%,&lt;/aj:&lt;}.%&gt;O`;a$N" pattern=".eP$qSOF5%5e[jy+" charset="Shift_JIS">
+<area valign="baseline" bordercolor="red"></area>
+<rect id="svgvar00004" x="2em" y="0 0 7" width="1px" filter="url(#svgvar00004)" fill="url(#svgvar00005) black" filter="none" onerror="eventhandler3()" mask-type="alpha" orient="1turn" font-style="normal" d="M 1 0 Q 0 1 73 1 S 70 2 0 1">
+<animateTransform id="svgvar00005" from="none" accumulate="sum" accumulate="none" to="visible" values="89; 0,6,1,9; 1" dominant-baseline="text-before-edge" offset="0.728949431062" begin="5s" viewBox="38 1 1 0" preserveAspectRatio="defer meet" />
+<discard id="svgvar00006" xlink:href="#svgvar00009" begin="0.919785706492s" begin="0.773964858496s" begin="svgvar00006.end" xlink:href="#svgvar00004" viewbox="1 90 0 -1" baseline-shift="super" cap-height="0" font-family="sans-serif" additive="sum" />
+<path id="svgvar00007" d="M 93 0 L 38 -1073741824 L 0 2 L -1 4 z" transform="matrix(0.718993343923 0.0851692490017 0.238498258113 0.774290186124 80.514489327394 10.997432524392)" fill-rule="evenodd" marker-mid="url(#svgvar00005)" marker-start="url(#svgvar00004)" opacity="-1" font-rendering="optimizeLegibility" arabic-form="isolated" k1="4">
+<symbol id="svgvar00008" style="stroke-linejoin: miter; -webkit-box-decoration-break: clone; animation-iteration-count: inherit; -webkit-transition: all -1s linear; visibility: initial" preserveAspectRatio="xMaxYMid" stroke="url(#svgvar00004)" viewBox="1 0 77 1" overflow="hidden" k1="0.271390465963" path="M8,0 C0,7 96,92 2,1" enable-background="new 5 4 10 20.0622914009595" opacity="0" fill-rule="evenodd" />
+<animateMotion id="svgvar00009" attributeName="x" begin="svgvar00005.endEvent" values="-1,1; 2147483648,0" keyPoints="1" calcMode="discrete" mode="multiply" fill="url(#svgvar00005) red" viewbox="0 -1 1 -1" />
+<radialGradient id="svgvar00010" fy="0.711506098361" color="HighlightText" visibility="hidden" r="58%" cy="32%" onerror="eventhandler4()" marker-end="url(#svgvar00009)" panose-1="-1 -1 0 9 -1 1 -1 -1 0 -1" r="-1" min="media" />
+<circle id="svgvar00011" cx="6px" cy="0.155646839394" filter="url(#svgvar00002)" clip-rule="nonzero" onmousedown="eventhandler2()" fill-opacity="0.862200222017" transform="scale(0.85638360769 0.7294594894)" seed="1" font-family="serif" begin="0.120948981168s" fy="0.145217773363" />
+<tspan id="svgvar00012" x="78em" y="3 0 0" rotate="-1 0 7" dominant-baseline="reset-size" xml:lang="el-GR" glyph-orientation-vertical="2deg" unicode-bidi="bidi-override" mask-type="luminance" fr="24%" dy="30.604771885094" onfocusin="eventhandler4()" x1="11px">
+<animate id="svgvar00013" additive="sum" by="5 1 62 1" from="1 0 6" repeatCount="0.472596407737" keySplines="-1,-1,-1073741824,0;1,0,0,7;1,1,-1,4" pointer-events="painted" keyTimes="1073741824;1073741824;1;-1" underline-thickness="0" />
+<metadata font-variant="small-caps" maskContentUnits="userSpaceOnUse" descent="1" width="32%" ascent="-1" from="hidden" clip="url(#svgvar00003)" writing-mode="tb">
+<metadata id="svgvar00015" panose-1="26 99 4 1 -1 57 1 6 2 0" markerHeight="0" baseline-shift="super" underline-thickness="5" y2="99%" type="translate" onmouseover="eventhandler1()" y="0px" max="-1s" display="inline" />
+<p id="htmlvar00036" title="" title="faw9GZZ99L86yt,&lt;9I;" lang="ms" title="E*d_=meJ" name="*d.&gt;fFW@!dES.wvqD" bgproperties="fixed" rows="22" ismap="ismap" open="true"></p>
+<title id="htmlvar00037" style="image-orientation: from-image; -webkit-column-rule-color: yellow; -webkit-animation-direction: alternate; mask-source-type: alpha; bordercolor="rgb(100,207,63)" expanded="true" title="rS.cDczw]h" valuetype="ref" lang="CUSTOM">\*1}BP5_&quot;u</title>
+<ul id="htmlvar00038" role="dialog" compact="compact" compact="compact" class="class7" selected="selected" keytype="RSA" checked="checked" usemap="" rightmargin="1">
+<li id="htmlvar00039" style="-webkit-align-items: baseline; -webkit-border-vertical-spacing: -1px; -webkit-flow-into: output; writing-mode: lr; -webkit-line-break: after-white-space" contenteditable="inherit" onclick="eventhandler1()" tabindex="80" class="class2" datetime="January 1, 2002" declare="declare">
+<details id="htmlvar00041" style="scroll-snap-destination: 65% 2px; -webkit-column-rule: -1px solid; text-underline: single; user-zoom: zoom; text-decoration-line: none" min="49" cite="E:!Fq4.% -t)F@c&amp; left="1" results="0">
+<summary id="htmlvar00042" class="class1" class="class7" title="3s6PTmUPOM{2z;X" rows="-1" loopstart="1" background="o:-^oKy|]" name="q)B`+he&gt;&quot;_5-F" face="Arial">
+<canvas id="htmlvar00043" name="" contenteditable="false" src="x" contenteditable="true"5" behavior="alternate" hspace="1" loopend="94" color="#eab4ca" usemap="">\4~* .ay]GK'$</canvas>
+<progress id="htmlvar00044" dir="LTR" min="-1" max="1" dir="ltr" value="0G85L:&lt;" summary="&quot;&quot;H&quot;1GF;C/n" href="" menu="htmlvar00002" charset="US-ASCII">
+<tt id="htmlvar00045" tabindex="0" dir="ltr" style="text-anchor: middle; box-flex: 1; width: -1ch" dir="RTL" class="class0" inputmode="numeric" vspace="8" scrollamount="1" target="htmlvar00007" placeholder="Nw{}3!kDRS">
+<meta id="htmlvar00046" content="V@!" content="" charset="ISO-2022-JP" scheme="NIST" charset="US-ASCII" lowsrc="~pW5c" frame="box" cellpadding="90" charset="ISO-2022-JP" content="6Gko.6%_"></meta>
+<sup id="htmlvar00047" tabindex="-1" title=" 6c|?G+9\UOciw6L" dir="LTR" title="SpmRX6r!4g5" lang="ti-ER" loopend="24" azimuth="-1" margin="7px -1px"></sup>
