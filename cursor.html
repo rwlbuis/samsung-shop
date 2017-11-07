@@ -1,6 +1,6 @@
 <html>
 <script>
-var open = window.indexedDB.open("MyDatabase", 1);
+var open = window.indexedDB.open("MyObjectStore", 1);
 open.onsuccess = function() {
     var db = open.result;
     var tx = db.transaction("MyObjectStore", "readwrite");
